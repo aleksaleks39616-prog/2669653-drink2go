@@ -14,3 +14,22 @@
  .icon-button--cart {
    background-image: url("../../icons/cart.svg");
  }
+
+ @media (min-width: $desktop-width) {
+   .icon-button {
+     display: inline-flex;
+     align-items: center;
+     width: auto;
+     height: auto;
+     min-height: 16px;
+     padding-left: 24px;
+     background-position: left center;
+     background-size: 16px 16px;
+     font-size: 12px;
+     font-weight: 500;
+     line-height: 16px;
+     text-transform: uppercase;
+     color: #333;
+     text-decoration: none;
+   }
+  }

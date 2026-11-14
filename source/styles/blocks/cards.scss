@@ -120,3 +120,24 @@
 
   }
 }
+
+
+@media (min-width: $desktop-width) {
+  .catalog__content {
+    display: grid;
+    grid-template-columns: 318px 1fr;
+    column-gap: 30px;
+    align-items: start;
+  }
+
+  .filters {
+    display: flex;
+    flex-direction: column;
+  }
+
+   .cards__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}

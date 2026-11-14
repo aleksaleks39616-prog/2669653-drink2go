@@ -13,36 +13,39 @@
 <body class="page__body">
   <header class="main-header">
     <div class="container main-header__wrapper">
-      <a class="main-header__logo logo" href="#">
-        <picture>
-          <source type="image/svg+xml" media="(min-width:1440px)" width="170" height="36"
-            srcset="images/header-logo-desktop.svg">
-          <source type="image/svg+xml" media="(min-width: 768px)" width="82" height="36"
-            srcset="images/header-logo-tablet.svg">
-          <img class="logo__image" src="images/header-logo-mobile.svg" width="32" height="36" alt="Drink2Go">
-        </picture>
-      </a>
+      <div class="main-header__brand">
+        <a class="main-header__logo" href="#">
+          <picture>
+            <source type="image/svg+xml" media="(min-width:1440px)" width="170" height="36"
+              srcset="images/header-logo-desktop.svg">
+            <source type="image/svg+xml" media="(min-width: 768px)" width="82" height="36"
+              srcset="images/header-logo-tablet.svg">
+            <img src="images/header-logo-mobile.svg" width="32" height="36" alt="Drink2Go">
+          </picture>
+        </a>
+        <p class="main-header__text">Интернет-магазин кофейных напитков</p>
+      </div>
       <div class="main-header__actions">
         <a class="main-header__action icon-button icon-button--user" href="#">
-          <span class="visually-hidden">Войти в личный кабинет</span></a>
+          <span class="visually-hidden main-header__action-text">Войти</span></a>
         <a class="main-header__action icon-button icon-button--cart" href="#">
-          <span class="visually-hidden">Корзина</span></a>
+          <span class="visually-hidden main-header__action-text">Корзина</span></a>
         <button class="main-header__burger" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
       <nav class="navigation main-header__navigation">
         <ul class="navigation__list">
-          <li class="navigation__item main-header__navigation-item">
+          <li class="navigation__item">
             <a class="navigation__link navigation__link--active" href="#">ГЛАВНАЯ</a>
           </li>
-          <li class="navigation__item main-header__navigation-item">
+          <li class="navigation__item">
             <a class="navigation__link" href="#">КАТАЛОГ</a>
           </li>
-          <li class="navigation__item main-header__navigation-item">
+          <li class="navigation__item">
             <a class="navigation__link" href="#">ДОСТАВКА</a>
           </li>
-          <li class="navigation__item main-header__navigation-item">
+          <li class="navigation__item">
             <a class="navigation__link" href="#">О НАС</a>
           </li>
         </ul>
@@ -114,6 +117,7 @@
       <div class="container">
         <p class="catalog__label">Каталог</p>
         <h2 class="catalog__title">Каталог кофейных напитков</h2>
+        <div class="catalog__content">
         <form class="filters" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="filters__group">
             <legend class="filters__legend">Цена</legend>
@@ -170,7 +174,6 @@
           </fieldset>
           <fieldset class="filters__group">
             <legend class="filters__legend">Страны произрастания</legend>
-
             <ul class="filters__list">
               <li class="filters__item">
                 <label class="filters__option">
@@ -179,7 +182,6 @@
                   <span class="filters__option-text">Бразилия</span>
                 </label>
               </li>
-
               <li class="filters__item">
                 <label class="filters__option">
                   <input class="filters__control filters__control--switch" type="checkbox" name="country"
@@ -187,7 +189,6 @@
                   <span class="filters__option-text">Эфиопия</span>
                 </label>
               </li>
-
               <li class="filters__item">
                 <label class="filters__option">
                   <input class="filters__control filters__control--switch" type="checkbox" name="country"
@@ -219,10 +220,7 @@
             </button>
           </div>
         </form>
-      </div>
-    </section>
-    <section class="cards">
-      <div class="container">
+        <div class="cards">
         <div class="cards__sorting">
           <label class="cards__sorting-text" for="cards-sort">
             Сортировка:
@@ -241,7 +239,7 @@
                   srcset="images/item-photo-1@1x.png 1x, images/item-photo-1@2x.png 2x">
                 <source type="image/png" media="(min-width: 768px)" width="130" height="188"
                   srcset="images/item-photo-1@1x.png 1x, images/item-photo-1@2x.png 2x">
-                <img class="product-page__image" src="images/item-photo-1@2x.png" width="130" height="188"
+                <img class="cards__imagee" src="images/item-photo-1@2x.png" width="130" height="188"
                   alt="Банка кофе «Декаф Флэт Уайт»">
               </picture>
             </a>
@@ -265,7 +263,7 @@
                   srcset="images/item-photo-2@1x.png 1x, images/item-photo-2@2x.png 2x">
                 <source type="image/png" media="(min-width: 768px)" width="130" height="188"
                   srcset="images/item-photo-2@1x.png 1x, images/item-photo-2@2x.png 2x">
-                <img class="product-page__image" src="images/item-photo-2@2x.png" width="130" height="188"
+                <img class="cards__image" src="images/item-photo-2@2x.png" width="130" height="188"
                   alt="Банка кофе «Декаф Флэт Уайт»">
               </picture>
             </a>
@@ -289,7 +287,7 @@
                   srcset="images/item-photo-3@1x.png 1x, images/item-photo-3@2x.png 2x">
                 <source type="image/png" media="(min-width: 768px)" width="130" height="188"
                   srcset="images/item-photo-3@1x.png 1x, images/item-photo-3@2x.png 2x">
-                <img class="product-page__image" src="images/item-photo-3@2x.png" width="130" height="188"
+                <img class="cards__image" src="images/item-photo-3@2x.png" width="130" height="188"
                   alt="Банка кофе «Декаф Флэт Уайт»">
               </picture>
             </a>
@@ -313,7 +311,7 @@
                   srcset="images/item-photo-4@1x.png 1x, images/item-photo-4@2x.png 2x">
                 <source type="image/png" media="(min-width: 768px)" width="130" height="188"
                   srcset="images/item-photo-4@1x.png 1x, images/item-photo-4@2x.png 2x">
-                <img class="product-page__image" src="images/item-photo-4@2x.png" width="130" height="188"
+                <img class="cards__image" src="images/item-photo-4@2x.png" width="130" height="188"
                   alt="Банка кофе «Декаф Флэт Уайт»">
               </picture>
             </a>
@@ -337,7 +335,7 @@
                   srcset="images/item-photo-5@1x.png 1x, images/item-photo-5@2x.png 2x">
                 <source type="image/png" media="(min-width: 768px)" width="130" height="188"
                   srcset="images/item-photo-5@1x.png 1x, images/item-photo-5@2x.png 2x">
-                <img class="product-page__image" src="images/item-photo-5@2x.png" width="130" height="188"
+                <img class="cards__image" src="images/item-photo-5@2x.png" width="130" height="188"
                   alt="Банка кофе «Декаф Флэт Уайт»">
               </picture>
             </a>
@@ -361,7 +359,7 @@
                   srcset="images/item-photo-6@1x.png 1x, images/item-photo-6@2x.png 2x">
                 <source type="image/png" media="(min-width: 768px)" width="130" height="188"
                   srcset="images/item-photo-6@1x.png 1x, images/item-photo-6@2x.png 2x">
-                <img class="product-page__image" src="images/item-photo-6@2x.png" width="130" height="188"
+                <img class="cards__image" src="images/item-photo-6@2x.png" width="130" height="188"
                   alt="Банка кофе «Декаф Флэт Уайт»">
               </picture>
             </a>
@@ -403,7 +401,9 @@
           </ul>
         </nav>
       </div>
-    </section>
+    </div>
+  </div>
+  </section>
     <div class="map">
       <picture>
         <source type="image/jpeg" media="(min-width: 1440px)" width="1440" height="540"
@@ -423,7 +423,7 @@
             <source type="image/svg+xml" media="(min-width:1440px)" width="170" height="36"
               srcset="images/footer-logo-desktop.svg">
             <source type="image/svg+xml" media="(min-width: 768px)" width="170" height="36"
-              srcset="images/footer-logo-tablet.svg">
+              srcset="images/footer-logo-desktop.svg">
             <img class="footer__logo-img" src="images/footer-logo-mobile.svg" width="82" height="36" alt="Drink2Go">
           </picture>
         </a>
@@ -469,7 +469,6 @@
         <address class="footer__address">Санкт-Петербург, набережная реки Карповки, дом 5</address>
         <a class="footer__phone" href="tel:+79999999999">+7 (999) 999-99-99</a>
       </div>
-
       <div class="footer__create">
         <a class="footer__create-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано в HTML Academy</a>
       </div>

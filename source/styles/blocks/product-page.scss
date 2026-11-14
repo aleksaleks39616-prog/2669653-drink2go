@@ -170,4 +170,20 @@
     text-align: center;
   }
 
+  .product-page__container {
+    display: grid;
+    grid-template-areas: "gallery info";
+    grid-template-columns: 600px 1fr;
+    align-items: center;
+    column-gap: 60px;
+  }
+
+  .product-page__gallery {
+    grid-area: gallery;
+  }
+
+  .product-page__info {
+  grid-area: info;
+}
+
 }
