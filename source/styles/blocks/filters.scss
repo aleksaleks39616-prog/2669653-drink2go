@@ -52,26 +52,42 @@
 }
 
 .filters__group {
-  margin: 0 0 24px;
+  margin: 0 0 30px;
   padding: 0;
   border: none;
 }
 
 .filters__list {
-  margin-bottom: 10px;
+  margin: 20px 0 0;
   padding: 0;
   list-style: none;
-
-  & li+li {
-    margin-top: 12px;
-  }
 }
+
+.filters__item {
+  margin-bottom: 20px;
+}
+
+.filters__item--country {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.filters__item--country:last-child {
+  margin-bottom: 0;
+}
+
+.filters__group:nth-of-type(2) {
+  margin-bottom: 10px;
+}
+
+
 
 .filters__price {
   display: flex;
   align-items: center;
   margin-top: 24px;
-  gap: 10px;
+  gap: 17px;
+
 }
 
 .filters__input {
@@ -105,6 +121,9 @@
   width: 8px;
   min-height: 2px;
   color: #BDBDBD;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 8px;
 }
 
 .filters__control--radio {
