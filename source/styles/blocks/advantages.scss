@@ -6,6 +6,7 @@
   line-height: 16px;
   margin: 0;
   padding-top: 50px;
+  text-transform: uppercase;
 }
 
 .advantages__title {
@@ -167,7 +168,7 @@
 
   .advantages__item::before {
     margin-top: 0;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     grid-column: auto;
     grid-row: auto;
     align-self: auto;

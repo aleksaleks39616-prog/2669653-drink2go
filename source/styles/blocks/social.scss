@@ -30,3 +30,11 @@
 .social__link--ok {
   background-image: url("../../icons/ok.svg");
 }
+
+@media (min-width: $desktop-width) {
+
+
+  .social {
+    margin-top: auto;
+  }
+}
