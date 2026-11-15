@@ -18,6 +18,8 @@
   line-height: 24px;
   margin-top: 10px;
   overflow-wrap: break-word;
+  border-radius: 4px;
+  margin-top: 0;
 }
 
 .button__cards {
@@ -40,5 +42,3 @@
   -webkit-mask: url("../../icons/union.svg") no-repeat center / contain;
   mask: url("../../icons/union.svg") no-repeat center / contain;
 }
-
-
