@@ -73,15 +73,9 @@
 }
 
 @media (min-width: $tablet-width) {
-  .pagination__button {
-    width: auto;
-    min-height: 40px;
-    padding: 8px 16px;
-    background-image: none;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    color: #7859CF;
+
+  .pagination {
+    margin-top: 22px;
   }
 
   .pagination__button {
@@ -106,7 +100,12 @@
     clip: auto;
   }
 
+  .pagination__button--left {
+    margin-right: 6px;
+  }
+
   .pagination__list {
     justify-content: flex-end;
+    padding: 40px 6px 90px 7px;
   }
 }

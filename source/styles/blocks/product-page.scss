@@ -121,6 +121,21 @@
   margin-top: 0;
 }
 
+.product-page__button:hover,
+.product-page__button:focus-visible {
+  background-color: #9070EC;
+}
+
+.product-page__button:active {
+  background-color: #593CAC;
+}
+
+.product-page__button:disabled {
+  background-color: #BDBDBD;
+  cursor: default;
+  pointer-events: none;
+}
+
 
 
 @media (min-width: $tablet-width) {

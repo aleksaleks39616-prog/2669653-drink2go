@@ -138,6 +138,27 @@
   mask: url("../../icons/union.svg") no-repeat center / contain;
 }
 
+.cards__button:hover,
+.cards__button:focus-visible {
+  background-color: #9070EC;
+}
+
+.cards__button:active {
+  background-color: #593CAC;
+}
+
+.cards__button:disabled {
+  background-color: #BDBDBD;
+  cursor: default;
+  pointer-events: none;
+}
+
+.cards__button:disabled  {
+  background-color: #BDBDBD;
+  cursor: default;
+  pointer-events: none;
+}
+
 
 
 @media (min-width: $tablet-width) {

@@ -41,6 +41,22 @@
 
 }
 
+
+.filters__submit:hover,
+.filters__submit:focus-visible {
+  background-color: #9070EC;
+}
+
+.filters__submit:active {
+  background-color: #593CAC;
+}
+
+.filters__submit:disabled {
+  background-color: #BDBDBD;
+  cursor: default;
+  pointer-events: none;
+}
+
 .filters__reset {
   font-size: 16px;
   font-weight: 400;
@@ -49,6 +65,24 @@
   background-color: #FFF;
   width: 280px;
   min-height: 40px;
+}
+
+.filters__reset:hover,
+.filters__reset:focus-visible {
+  background-color: #9070EC;
+  color: #FFF;
+}
+
+.filters__reset:active {
+  background-color: #593CAC;
+  color: #FFF;
+}
+
+.filters__reset:disabled {
+  background-color: #E2E2E2;
+  color: #BDBDBD;
+  cursor: default;
+  pointer-events: none;
 }
 
 .filters__group {
