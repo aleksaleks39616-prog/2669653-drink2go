@@ -33,7 +33,7 @@
 @media (min-width: $tablet-width) {
 
   .catalog__label {
-    padding-top: 60px;
+    padding-top: 69px;
   }
 
   .catalog__title {
@@ -43,6 +43,7 @@
     font-weight: 700;
     line-height: 64px;
     color: #333;
+    min-width: 728px;
   }
 
 

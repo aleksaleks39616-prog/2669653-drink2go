@@ -108,15 +108,14 @@
   }
 
   .advantages__item-title {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
     font-size: 24px;
     font-weight: 700;
     line-height: 36px;
-    text-align: center;
     color: #333;
-    grid-column: 2;
-    grid-row: 1;
-    margin-bottom: 8px;
-    text-align: left;
+    text-align: left
   }
 
   .advantages__item-text {
@@ -140,10 +139,13 @@
 
   .advantages__item {
     display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto auto;
+    grid-template-columns: 54px minmax(0, 1fr);
+    grid-template-rows: auto 1fr;
     column-gap: 26px;
+    row-gap: 7px;
+    align-items: start;
     text-align: left;
+    position: relative;
   }
 
   .advantages__item::before {
@@ -151,6 +153,9 @@
     grid-row: 1 / 3;
     align-self: start;
     margin: 0;
+    position: absolute;
+    left: 9px;
+    top: 4px;
   }
 
 

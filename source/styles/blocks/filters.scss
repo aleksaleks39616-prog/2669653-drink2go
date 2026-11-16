@@ -193,12 +193,37 @@
 @media (min-width: $tablet-width) {
 
   .filters {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
-    row-gap: 40px;
     align-items: start;
+    gap: 35px 29px;
+    display: grid;
 
+  }
+
+
+
+  .filters__group {
+    border: none;
+    margin: 0 0 4px;
+    padding: 0;
+  }
+
+  .filters__price {
+    align-items: center;
+    gap: 20px;
+    margin-top: 19px;
+    display: flex;
+  }
+
+
+  .filters__list {
+    margin: 20px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .filters__input {
+    width: 88px;
   }
 
   .filters__buttons {
