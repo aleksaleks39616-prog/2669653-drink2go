@@ -104,6 +104,23 @@
   transform: translateY(-4px);
 }
 
+.product-page__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  min-width: 113px;
+  min-height: 40px;
+  padding: 8px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 10px;
+  overflow-wrap: break-word;
+  border-radius: 4px;
+  margin-top: 0;
+}
+
 
 
 @media (min-width: $tablet-width) {

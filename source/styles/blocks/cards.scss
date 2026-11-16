@@ -3,13 +3,12 @@
 }
 
 .cards__list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 20px;
   margin: 0;
-  padding: 20px 0 0 0;
+  padding: 20px 0 0;
   list-style: none;
-  padding-left: 0;
 }
 
 .cards__sorting {
@@ -119,6 +118,26 @@
   white-space: nowrap;
 }
 
+.cards__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 141px;
+  min-height: 36px;
+  padding: 8px 20px;
+  color: #FFF;
+}
+
+.cards__button::before {
+  content: "";
+  flex-shrink: 0;
+  width: 20px;
+  height: 16px;
+  background-color: currentColor;
+  -webkit-mask: url("../../icons/union.svg") no-repeat center / contain;
+  mask: url("../../icons/union.svg") no-repeat center / contain;
+}
+
 
 
 @media (min-width: $tablet-width) {
@@ -160,6 +179,8 @@
     padding-right: 0;
     text-align: left;
   }
+
+
 }
 
 
