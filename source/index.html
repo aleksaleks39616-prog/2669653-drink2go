@@ -53,10 +53,9 @@
     </div>
   </header>
   <main class="main-container">
-    <section class="product-page">
+     <section class="product-page">
       <div class="container product-page__container">
         <div class="product-page__gallery">
-
           <button class="product-page__arrow product-page__arrow--prev" type="button">
             <span class="visually-hidden">Предыдущий слайд</span>
           </button>
@@ -71,11 +70,17 @@
           <button class="product-page__arrow product-page__arrow--next" type="button">
             <span class="visually-hidden">Следующий слайд</span>
           </button>
+          <div class="product-page__dots" aria-hidden="true">
+            <span class="product-page__dot product-page__dot--active"></span>
+            <span class="product-page__dot"></span>
+            <span class="product-page__dot"></span>
+          </div>
         </div>
         <div class="product-page__info">
           <p class="product-page__label">Новинка!</p>
           <h1 class="product-page__title">Декаф Флэт Уайт</h1>
-          <p class="product-page__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком —
+          <p class="product-page__description">
+            Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком —
             то, что нужно для расслабления после тяжёлого рабочего дня
           </p>
           <div class="product-page__wrapper">
@@ -195,14 +200,14 @@
                     <span class="filters__option-text">Колумбия</span>
                   </label>
                 </li>
-                 <li class="filters__item filters__item--country">
+                <li class="filters__item filters__item--country">
                   <label class="filters__option">
                     <input class="filters__control filters__control--switch" type="checkbox" name="country"
                       value="costa-rica">
                     <span class="filters__option-text">Коста-Рика</span>
                   </label>
                 </li>
-                 <li class="filters__item filters__item--country">
+                <li class="filters__item filters__item--country">
                   <label class="filters__option">
                     <input class="filters__control filters__control--switch" type="checkbox" name="country"
                       value="peru">
@@ -469,6 +474,6 @@
       </div>
     </div>
   </footer>
-</body>
+  </body>
 
 </html>
