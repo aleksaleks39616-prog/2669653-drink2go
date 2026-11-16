@@ -14,7 +14,6 @@
 
 .pagination__item {
   display: flex;
-
 }
 
 
@@ -30,6 +29,26 @@
   line-height: 24px;
   color: #7859CF;
   text-decoration: none;
+  background-color: #FFF;
+}
+
+
+.pagination__item-link:hover,
+.pagination__itemn-link:focus-visible {
+  background-color:  #9070EC;
+}
+
+.pagination__itemn-link:active {
+  background-color: #593CAC;
+}
+
+.pagination__item-link:disabled {
+  background-color: #BDBDBD;
+  cursor: default;
+  pointer-events: none;
+}
+
+.pagination__item-link--current {
   background-color: #FFF;
 }
 

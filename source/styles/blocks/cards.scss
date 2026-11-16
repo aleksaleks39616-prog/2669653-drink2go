@@ -153,12 +153,6 @@
   pointer-events: none;
 }
 
-.cards__button:disabled  {
-  background-color: #BDBDBD;
-  cursor: default;
-  pointer-events: none;
-}
-
 
 
 @media (min-width: $tablet-width) {
