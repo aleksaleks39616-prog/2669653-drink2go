@@ -7,13 +7,17 @@
   flex-direction: column;
   gap: 20px;
   margin: 0;
-  padding-top: 40px;
+  padding: 20px 0 0 0;
   list-style: none;
   padding-left: 0;
 }
 
 .cards__sorting {
-  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 21px;
+  padding-top: 45px;
+  padding-left: 2px;
 }
 
 .cards__sorting-text {
@@ -22,18 +26,34 @@
   font-weight: 600;
   line-height: 24px;
   color: #333;
+  text-align: right;
 }
 
 .cards__sorting-select {
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 0;
+  width: auto;
+  box-sizing: border-box;
+  font-family: inherit;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
   color: #7859CF;
-  text-align: right;
+  text-align: left;
   background-color: #F8F8F8;
   border: none;
-
+  padding: 0;
+  padding-right: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("../../icons/arrow-select.svg");
+  background-repeat: no-repeat;
+  background-size: 10px 6px;
+  background-position-x: 95%;
+  background-position-y: center;
 
 }
 
@@ -42,7 +62,10 @@
   flex-direction: column;
   align-items: flex-start;
   background-color: #FFF;
-  padding: 16px;
+  align-items: stretch;
+  box-sizing: border-box;
+  padding: 40px 20px 20px;
+  background-color: #FFF;
 
 }
 
@@ -51,23 +74,31 @@
   flex-direction: row;
   align-items: center;
   gap: 12px;
-  margin-top: 8px;
+  margin-top: 16px;
+  justify-content: space-between;
 }
 
 .cards__link {
   display: flex;
   justify-content: center;
-  align-self: stretch;
+  margin-bottom: 24px;
+}
+
+.cards__image {
+  display: block;
+  width: 130px;
+  height: 188px;
+  object-fit: contain;
 }
 
 .cards__item-title {
-  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 32px;
   text-decoration: none;
   list-style: none;
+  margin: 0;
 }
 
 
@@ -76,6 +107,7 @@
   line-height: 20px;
   font-size: 14px;
   color: #333;
+  margin: 4px 0 0;
 }
 
 .cards__price {
@@ -135,7 +167,7 @@
     flex-direction: column;
   }
 
-   .cards__list {
+  .cards__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;

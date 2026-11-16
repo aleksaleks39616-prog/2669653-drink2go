@@ -1,9 +1,10 @@
 .social__list {
   display: flex;
-  gap: 20px;
+  gap: 29px;
   margin: 0;
   padding: 0;
   list-style: none;
+  align-items: center;
 }
 
 .social__item {
@@ -12,23 +13,27 @@
 
 .social__link {
   display: block;
-  width: 24px;
-  height: 24px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 20px 20px;
+  width: 40px;
+  height: 40px;
 }
 
 .social__link--vkontakte {
   background-image: url("../../icons/vk.svg");
+
 }
 
 .social__link--pinterest {
   background-image: url("../../icons/pinterest.svg");
+  width: 22px;
+  height: 22px;
 }
 
 .social__link--ok {
   background-image: url("../../icons/ok.svg");
+
 }
 
 @media (min-width: $desktop-width) {
